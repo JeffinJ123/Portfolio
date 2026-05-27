@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeffin Jolly | Game Developer Portfolio</title>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to the correct stylesheet name -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Background Particles -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Visual Grid Overlay for subtle tech vibe -->
+    <div class="tech-grid"></div>
+
+    <header class="navbar">
+        <div class="nav-logo">
+            <span class="logo-accent">&lt;</span>JJ<span class="logo-accent">/&gt;</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#hero">Bio</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero / Bio Section -->
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <div class="tagline-badge">Ready to Play</div>
+                <div class="overflow-hidden">
+                    <h1 id="hero-name" class="reveal-text">Jeffin Jolly</h1>
+                </div>
+                <div class="overflow-hidden">
+                    <h2 id="hero-title" class="reveal-text">Game Developer</h2>
+                </div>
+                <div class="overflow-hidden">
+                    <p id="hero-summary" class="reveal-text"></p>
+                </div>
+                <div class="btn-group pt-2">
+                    <a id="hero-email" href="#" class="reveal-text btn btn-primary">Get in Touch</a>
+                    <a href="#projects" class="reveal-text btn btn-secondary">View Work</a>
+                </div>
+            </div>
+            
+            <div class="hero-image-container reveal-image">
+                <div class="hero-image-wrapper profile-image">
+                    <img id="hero-img" src="" alt="Profile Picture">
+                </div>
+                <div class="glow-backdrop"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h3 class="section-title" data-text="Expertise">Expertise</h3>
+            <div class="skills-container">
+                <div class="skills-column glass-card">
+                    <h4>Languages</h4>
+                    <div id="skills-programming" class="skills-list"></div>
+                </div>
+                <div class="skills-column glass-card">
+                    <h4>Technologies & Engines</h4>
+                    <div id="skills-technology" class="skills-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <h3 class="section-title" data-text="Journey">Experience</h3>
+            <div id="experience-list" class="experience-timeline">
+                <!-- Dynamically loaded timeline elements -->
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h3 class="section-title" data-text="Showcase">College Projects</h3>
+            <div id="projects-grid" class="projects-grid">
+                <!-- Dynamically loaded project cards -->
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="education-section">
+            <h3 class="section-title" data-text="Credentials">Education & Certifications</h3>
+            <div class="edu-cert-container">
+                <div class="education-block glass-card">
+                    <h4>Education</h4>
+                    <div id="education-content"></div>
+                </div>
+                <div class="certifications-block glass-card">
+                    <h4>Certifications</h4>
+                    <ul id="certifications-list" class="cert-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Jeffin Jolly. Crafted with Passion & Pixels.</p>
+    </footer>
+
+    <!-- GSAP for core smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

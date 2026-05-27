@@ -1,0 +1,78 @@
+{
+  "personal": {
+    "name": "Jeffin Jolly",
+    "title": "Game Developer",
+    "email": "Jeffinjollyg@gmail.com",
+    "phone": "+91-7356152949",
+    "location": "Ernakulam, Kerala",
+    "summary": "Passionate Game Developer with expertise in PixiJS and TypeScript, creating immersive and interactive game interfaces. Proficient in slot game mechanics and engine architecture, with foundational knowledge in Unity, C#, and Phaser JS to support growth in cross-platform and web-based game development.",
+    "linkedin": "linkedin.com/in/jeffin-jolly",
+    "image": "data/image.jpg"
+  },
+  "skills": {
+    "programming": ["JavaScript", "TypeScript", "C#", "Python"],
+    "technology": ["Git/GitHub", "Pixi.JS", "Unity", "Firebase", "MySQL", "Flutter"]
+  },
+  "experience": [
+    {
+      "company": "Probability Gaming",
+      "role": "Game Developer",
+      "duration": "JUL 2023 - Present",
+      "location": "Goa, India",
+      "description": "2 Years of Comprehensive Game Development. Successfully contributed to over 20+ diverse game projects, including slots, cards and table games. Worked with GAME ART as an outsourcing studio and contributed to the successful completion of two projects: a 5x3 slot game titled 'The Way of the Dead' and a card game titled 'One-Hand Blackjack'."
+    },
+    {
+      "company": "NEO Foundation",
+      "role": "Campus Volunteer",
+      "duration": "JUL 2021 - AUG 2022",
+      "location": "Ernakulam, Kerala",
+      "description": "Collaborated with colleagues and students to promote the benefits of attending the NEO Olympiad. Provided technical support to examinees, resolving issues promptly."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Phishing Website Detection",
+      "type": "Main Project",
+      "duration": "DEC 2022 - JUN 2023",
+      "description": "Browser-based Phishing Website Detection Extension developed with HTML, CSS, JavaScript and Machine Learning. It can be used as a browser extension or a search bar to find information about suspicious links."
+    },
+    {
+      "name": "Food Donation App",
+      "type": "Mini Project",
+      "duration": "FEB 2022 - JUL 2022",
+      "description": "Food Donation Application developed with Flutter and Firebase. Acts as a bridge between the donor who wants to donate excess food and the receiver who can be an organization or an individual."
+    }
+  ],
+  "education": {
+    "institution": "A.P.J Abdul Kalam Technological University (KTU)",
+    "degree": "B Tech - CSE",
+    "duration": "AUG 2019 - MAY 2023",
+    "cgpa": "7.69/10"
+  },
+  "certifications": [
+    {
+      "name": "Elastic Google Cloud Infrastructure: Scaling and Automation",
+      "issuer": "Coursera",
+      "link": "https://coursera.org/share/d44782bac47ccd6c93c791b17b22c410"
+    },
+    {
+      "name": "Technical Support Fundamentals",
+      "issuer": "Coursera",
+      "link": "https://coursera.org/share/5bcff841ffac9ccd8972aabed334088e"
+    },
+    {
+      "name": "Job Roles in the Cloud",
+      "issuer": "AWS Skill Builder"
+    },
+    {
+      "name": "AI For Everyone",
+      "issuer": "Coursera",
+      "link": "https://coursera.org/share/b4ff85dba9c8ca066c2dc410324ca629"
+    },
+    {
+      "name": "Introduction to Software Product Management",
+      "issuer": "Coursera",
+      "link": "https://coursera.org/share/60736938403b888e65a8e1632edbdc13"
+    }
+  ]
+}
