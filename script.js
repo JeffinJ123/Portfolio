@@ -212,10 +212,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // --- 4. FEATURED PROJECTS SECTION ---
-        const projectsGrid = document.getElementById('projects-grid');
-        projectsGrid.innerHTML = '';
+        const workGrid = document.getElementById('work-projects-grid');
+        const collegeGrid = document.getElementById('college-projects-grid');
+        
+        workGrid.innerHTML = '';
+        collegeGrid.innerHTML = '';
 
-        data.projects.forEach(project => {
+        // Render Work Projects
+        data.projects.work.forEach(project => {
             const projectCard = document.createElement('div');
             projectCard.className = 'project-card';
             projectCard.innerHTML = `
@@ -224,21 +228,58 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p class="project-desc">${project.description}</p>
                 <div class="project-timeline-tag">${project.duration}</div>
             `;
-            projectsGrid.appendChild(projectCard);
+            workGrid.appendChild(projectCard);
+        });
+
+        // Render College Projects
+        data.projects.college.forEach(project => {
+            const projectCard = document.createElement('div');
+            projectCard.className = 'project-card';
+            projectCard.innerHTML = `
+                <span class="project-badge">${project.type}</span>
+                <h4>${project.name}</h4>
+                <p class="project-desc">${project.description}</p>
+                <div class="project-timeline-tag">${project.duration}</div>
+            `;
+            collegeGrid.appendChild(projectCard);
         });
 
         // --- 5. EDUCATION & CERTIFICATIONS ---
         const eduContainer = document.getElementById('education-content');
-        eduContainer.innerHTML = `
-            <div class="edu-card">
-                <span class="edu-degree">${data.education.degree}</span>
-                <span class="edu-inst">${data.education.institution}</span>
-                <div class="edu-meta">
-                    <span>CGPA: ${data.education.cgpa}</span>
-                    <span>${data.education.duration}</span>
-                </div>
-            </div>
-        `;
+        eduContainer.innerHTML = '';
+        
+        data.education.forEach((edu, index) => {
+            const eduCard = document.createElement('div');
+            eduCard.className = 'edu-card';
+            if (index > 0) {
+                eduCard.style.marginTop = '2rem';
+                eduCard.style.paddingTop = '2rem';
+                eduCard.style.borderTop = '1px solid rgba(255, 255, 255, 0.05)';
+            }
+            
+            if (edu.University) {
+                eduCard.innerHTML = `
+                    <span class="edu-degree">${edu.degree}</span>
+                    <span class="edu-inst">${edu.College}</span>
+                    <span class="edu-inst" style="font-size: 0.9rem; opacity: 0.7; display: block; margin-top: -0.2rem;">${edu.University}</span>
+                    <div class="edu-meta">
+                        <span>CGPA: ${edu.cgpa}</span>
+                        <span>${edu.duration}</span>
+                    </div>
+                `;
+            } else {
+                const gradeInfo = edu.Percentage ? `Percentage: ${edu.Percentage}` : `GPA: ${edu.GPA}`;
+                eduCard.innerHTML = `
+                    <span class="edu-degree">${edu.Board}</span>
+                    <span class="edu-inst">${edu.School}</span>
+                    <div class="edu-meta">
+                        <span>${gradeInfo}</span>
+                        <span>Passed Out: ${edu["Passed Out"]}</span>
+                    </div>
+                `;
+            }
+            eduContainer.appendChild(eduCard);
+        });
 
         const certList = document.getElementById('certifications-list');
         certList.innerHTML = '';

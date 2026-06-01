@@ -538,6 +538,15 @@ body {
     padding: 6rem 0;
 }
 
+.projects-subtitle {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    color: var(--neon-cyan);
+    margin: 2.5rem 0 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
