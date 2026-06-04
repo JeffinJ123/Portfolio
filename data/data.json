@@ -42,6 +42,13 @@
           "type": "Card Game",
           "duration": "Probability Gaming",
           "description": "Contributed to the development and success of 'One-Hand Blackjack' card game, refining card game logic, smooth animations, and solid engine integration."
+        },
+        {
+          "name": "Book of the Dead",
+          "type": "5x3 Slot Game",
+          "duration": "Probability Gaming",
+          "description": "Created with Typescript,pixijs and vite. variable reel slotgame with 5 reels and 3 rows. It includes features like free spins, wild symbols, and a free game.",
+          "link": "https://jeffinj123.github.io/Pixi-Slot-Game/"
         }
       ],
       "college": [

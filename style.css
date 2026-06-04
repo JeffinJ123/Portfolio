@@ -568,6 +568,10 @@ body {
     overflow: hidden;
 }
 
+.project-card.clickable-card {
+    cursor: pointer;
+}
+
 .project-card::after {
     content: '';
     position: absolute;

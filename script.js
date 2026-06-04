@@ -222,6 +222,12 @@ document.addEventListener('DOMContentLoaded', () => {
         data.projects.work.forEach(project => {
             const projectCard = document.createElement('div');
             projectCard.className = 'project-card';
+            if (project.link) {
+                projectCard.classList.add('clickable-card');
+                projectCard.addEventListener('click', () => {
+                    window.open(project.link, '_blank');
+                });
+            }
             projectCard.innerHTML = `
                 <span class="project-badge">${project.type}</span>
                 <h4>${project.name}</h4>
@@ -235,6 +241,12 @@ document.addEventListener('DOMContentLoaded', () => {
         data.projects.college.forEach(project => {
             const projectCard = document.createElement('div');
             projectCard.className = 'project-card';
+            if (project.link) {
+                projectCard.classList.add('clickable-card');
+                projectCard.addEventListener('click', () => {
+                    window.open(project.link, '_blank');
+                });
+            }
             projectCard.innerHTML = `
                 <span class="project-badge">${project.type}</span>
                 <h4>${project.name}</h4>
