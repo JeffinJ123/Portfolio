@@ -1,7 +1,7 @@
   {
     "personal": {
       "name": "Jeffin Jolly",
-      "title": "Game Developer",
+      "title": "Senior Game Developer",
       "email": "Jeffinjollyg@gmail.com",
       "phone": "+91-7356152949",
       "location": "Ernakulam, Kerala",
@@ -19,7 +19,7 @@
         "role": "Game Developer",
         "duration": "JUL 2023 - Present",
         "location": "Goa, India",
-        "description": "2 Years of Comprehensive Game Development. Successfully contributed to over 20+ diverse game projects, including slots, cards and table games. Worked with GAME ART as an outsourcing studio and contributed to the successful completion of two projects: a 5x3 slot game titled 'The Way of the Dead' and a card game titled 'One-Hand Blackjack'."
+        "description": "Successfully contributed to over 20+ diverse game projects, including slots, cards and table games. Worked with GAME ART as an outsourcing studio and contributed to the successful completion of two projects: a 5x3 slot game titled 'The Way of the Dead' and a card game titled 'One-Hand Blackjack'."
       },
       {
         "company": "NEO Foundation",
@@ -44,11 +44,11 @@
           "description": "Contributed to the development and success of 'One-Hand Blackjack' card game, refining card game logic, smooth animations, and solid engine integration."
         },
         {
-          "name": "Book of the Dead",
-          "type": "5x3 Slot Game",
-          "duration": "Probability Gaming",
-          "description": "Created with Typescript,pixijs and vite. variable reel slotgame with 5 reels and 3 rows. It includes features like free spins, wild symbols, and a free game.",
-          "link": "https://jeffinj123.github.io/Pixi-Slot-Game/"
+          "name": "Duel Dawn",
+          "type": "4x3 Slot Game",
+          "duration": "Personal Project",
+          "description": "Created with Typescript,pixijs and vite. variable reel slotgame with 4 reels and 3 rows. It includes features like free spins, wilds ,scatters.",
+          "link": "https://jeffinj123.github.io/Duel-Dawn/"
         }
       ],
       "college": [
